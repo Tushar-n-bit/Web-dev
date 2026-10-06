@@ -1,0 +1,44 @@
+.navbar-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.navbar-dock {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.dock-item {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  min-width: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #9ca3af;
+  background: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* Sirf hover par white hoga - Home bhi isi me aayega */
+.dock-item:hover {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+}
+
+.dock-icon { flex-shrink: 0; }
+.dock-label { font-size: 13px; font-weight: 700; overflow: hidden; }
